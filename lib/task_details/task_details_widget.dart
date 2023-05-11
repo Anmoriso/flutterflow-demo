@@ -206,7 +206,12 @@ class _TaskDetailsWidgetState extends State<TaskDetailsWidget> {
                           children: [
                             Text(
                               taskDetailsTasksRecord.title!,
-                              style: FlutterFlowTheme.of(context).bodyMedium,
+                              style: FlutterFlowTheme.of(context)
+                                  .bodyMedium
+                                  .override(
+                                    fontFamily: 'Poppins',
+                                    fontWeight: FontWeight.w600,
+                                  ),
                             ),
                             Text(
                               taskDetailsTasksRecord.details!,
